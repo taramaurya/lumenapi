@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "a343e36d-85df-4231-b128-ae8762792a96",
+		"name": "RestAPITaskManager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "5388381"
+	},
+	"item": [
+		{
+			"name": "getTask",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/api/task"
+			},
+			"response": []
+		},
+		{
+			"name": "createTask",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "test new",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "task description",
+							"type": "text"
+						},
+						{
+							"key": "due_date",
+							"value": "2024-02-10",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "completed",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:8000/api/task/create"
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "test new",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "cvghbjnkgcdvahsjk hvdsda ahdvwha dhsa",
+							"type": "text"
+						},
+						{
+							"key": "due_date",
+							"value": "2023-02-12",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "In progress",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:8000/api/task/update/1"
+			},
+			"response": []
+		},
+		{
+			"name": "getbyIdtask",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:8000/api/task/1"
+			},
+			"response": []
+		}
+	]
+}
